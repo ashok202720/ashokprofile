@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(270deg, #ff416c, #ff4b2b, #1e3c72, #2a5298);
+      background-size: 800% 800%;
+      animation: gradientBG 20s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .profile-container {
+      background-color: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .profile-container img {
+      width: 120px;
+      height: 115px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+    }
+
+    .profile-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .profile-bio {
+      font-size: 16px;
+      margin-bottom: 25px;
+      opacity: 0.9;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .social-icons img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0.8;
+      border: none;
+      padding: 0;
+    }
+
+    .social-icons a:hover img {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <img src="https://uploads.onecompiler.io/43qg43saq/43qg755qc/IMG_20250331_213717-01.jpeg" alt="Profile Picture" />
+    <div class="profile-name"><b>J M Ashok Navin</div><br>
+    <div class="profile-bio">silent🤫,not absend 😈<br>
+"Edit.Export.Elevate."🎥<br>
+"Ctrl+Alt+Dream big."📈</b>
+</div>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/ashok19_03?igsh=aDBld3YxYjR2dTlh" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram Logo" />
+      </a>
+      <a href="https://www.threads.net/@ashok19_03" target="_blank">
+        <img src="https://i.pinimg.com/originals/33/7f/27/337f27be6bfddfcb5ecc9b95b1d3ac2b.png" alt="Threads Logo" />
+      </a>
+      <a href="https://www.facebook.com/share/1CsxsnbtVp/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" />
+      </a>
+      <a href="https://wa.me/919042312500" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" />
+      </a>
+      <a href="mailto:ashok19032006@gmail.com">
+        <img src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png" alt="Gmail Logo" />
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
